@@ -8,8 +8,10 @@ public class App extends JFrame {
 
     // definición de los objetos que se contendran en el layout
     private static JLabel directionsLabel = new JLabel("Ingrese su nombre");
+    private static JLabel cajaLabel = new JLabel("Ingrese el texto");
     private static JLabel outputJLabel = new JLabel();
     private static JTextField nameBox = new JTextField(25);
+    private static JTextArea cajaTextField = new JTextArea(10, 25);
     private static JButton nameButton = new JButton("Guardar");
 
     public static void main(String[] args) throws Exception {
@@ -23,6 +25,8 @@ public class App extends JFrame {
         // agregar contenido (Swing) a la ventana
         window.getContentPane().add(directionsLabel);
         window.getContentPane().add(nameBox);
+        window.getContentPane().add(cajaLabel);
+        window.getContentPane().add(cajaTextField);
         window.getContentPane().add(nameButton);
         window.getContentPane().add(outputJLabel);
 
